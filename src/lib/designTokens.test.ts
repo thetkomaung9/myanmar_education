@@ -16,8 +16,6 @@ import {
   semanticColorTokens,
   backgroundColorTokens,
   spacingTokens,
-  type ColorToken,
-  type SpacingToken,
 } from './designTokens';
 
 // ── ColorToken tests ─────────────────────────────────────────────────────────
@@ -194,7 +192,7 @@ describe('Custom Tailwind spacing values — multiples of 4px', () => {
       const match = spacingTokens.find((t) => t.value === expectedPx);
       expect(
         match,
-        `No SpacingToken found for ${expectedPx}px (a custom Tailwind spacing value)`,
+        `No SpacingToken found for ${expectedPx}px (a custom Tailwind spacing value)`
       ).toBeDefined();
     }
   });

@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useLanguage } from '@/hooks/useLanguage';
-import { Bell, User, ChevronDown } from 'lucide-react';
+import { Bell, ChevronDown } from 'lucide-react';
 import { useState } from 'react';
 
 interface Breadcrumb {
@@ -16,15 +16,21 @@ export default function AppHeader({ breadcrumbs = [] }: { breadcrumbs?: Breadcru
   const pathname = usePathname();
   const [profileOpen, setProfileOpen] = useState(false);
 
+  const formatSegment = (segment: string) =>
+    segment
+      .split('-')
+      .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+      .join(' ');
+
   // Generate breadcrumbs from pathname if not provided
-  const defaultBreadcrumbs = pathname
-    .split('/')
-    .filter(Boolean)
-    .slice(1) // Skip (app) group
-    .map((segment, i, arr) => ({
-      label: t(`breadcrumb.${segment}`) || segment,
+  const segments = pathname.split('/').filter(Boolean);
+  const defaultBreadcrumbs = segments.map((segment, i, arr) => {
+    const translated = t(`breadcrumb.${segment}`);
+    return {
+      label: translated === `breadcrumb.${segment}` ? formatSegment(segment) : translated,
       href: i === arr.length - 1 ? undefined : `/${arr.slice(0, i + 1).join('/')}`,
-    }));
+    };
+  });
 
   const displayBreadcrumbs = breadcrumbs.length > 0 ? breadcrumbs : defaultBreadcrumbs;
 

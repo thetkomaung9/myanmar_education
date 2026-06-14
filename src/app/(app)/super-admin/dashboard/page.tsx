@@ -1,10 +1,6 @@
 'use client';
 
-import { useLanguage } from '@/hooks/useLanguage';
-
 export default function SuperAdminDashboard() {
-  const { t } = useLanguage();
-
   return (
     <div className="space-y-8">
       {/* Header */}

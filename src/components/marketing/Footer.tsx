@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { GraduationCap, Mail, Github, Instagram, Youtube } from 'lucide-react';
+import { GitBranch, GraduationCap, Mail, Share2, Video } from 'lucide-react';
 
 const productLinks = [
   { label: 'Features', href: '/features' },
@@ -40,7 +40,7 @@ export function Footer() {
                 aria-label="GitHub"
                 className="text-neutral-400 hover:text-brand-600 transition-colors"
               >
-                <Github className="h-5 w-5" />
+                <GitBranch className="h-5 w-5" />
               </a>
               <a
                 href="https://instagram.com"
@@ -49,7 +49,7 @@ export function Footer() {
                 aria-label="Instagram"
                 className="text-neutral-400 hover:text-brand-600 transition-colors"
               >
-                <Instagram className="h-5 w-5" />
+                <Share2 className="h-5 w-5" />
               </a>
               <a
                 href="https://youtube.com"
@@ -58,7 +58,7 @@ export function Footer() {
                 aria-label="YouTube"
                 className="text-neutral-400 hover:text-brand-600 transition-colors"
               >
-                <Youtube className="h-5 w-5" />
+                <Video className="h-5 w-5" />
               </a>
               <a
                 href="mailto:info@edusphere.mm"

@@ -1,15 +1,13 @@
 'use client';
 
 import { useLanguage } from '@/hooks/useLanguage';
-import { useSearchParams, useRouter } from 'next/navigation';
+import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 import Link from 'next/link';
 
 export default function ResetPasswordContent() {
   const { t } = useLanguage();
   const router = useRouter();
-  const searchParams = useSearchParams();
-  const token = searchParams.get('token');
 
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
@@ -38,7 +36,7 @@ export default function ResetPasswordContent() {
       await new Promise((resolve) => setTimeout(resolve, 1000));
       setSuccess(true);
       setTimeout(() => router.push('/login'), 2000);
-    } catch (err) {
+    } catch {
       setError(t('auth.errorResettingPassword'));
     } finally {
       setIsLoading(false);

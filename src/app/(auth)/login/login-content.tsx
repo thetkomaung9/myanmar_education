@@ -1,14 +1,12 @@
 'use client';
 
 import { useLanguage } from '@/hooks/useLanguage';
-import { useTheme } from '@/hooks/useTheme';
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 
 export default function LoginContent() {
   const { t } = useLanguage();
-  const { theme } = useTheme();
   const router = useRouter();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -23,8 +21,8 @@ export default function LoginContent() {
 
     try {
       // TODO: Call API endpoint
-      router.push('/(app)/student/dashboard');
-    } catch (err) {
+      router.push('/student/dashboard');
+    } catch {
       setError(t('auth.loginFailed'));
     } finally {
       setIsLoading(false);

@@ -1,12 +1,10 @@
 'use client';
 
 import { useLanguage } from '@/hooks/useLanguage';
-import { useState } from 'react';
 import { ContactForm } from '@/components/marketing/ContactForm';
 
 export default function ContactContent() {
   const { t } = useLanguage();
-  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
 
   return (
     <div className="min-h-screen bg-white dark:bg-slate-950">
@@ -23,7 +21,7 @@ export default function ContactContent() {
         <div className="mx-auto max-w-6xl">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             <div>
-              <ContactForm onSubmit={() => setSubmitStatus('success')} />
+              <ContactForm />
             </div>
 
             <div>

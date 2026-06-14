@@ -59,18 +59,22 @@ export default function PricingContent() {
             {PRICING_PLANS.map((plan) => (
               <PricingCard
                 key={plan.id}
-                name={t(`pricing.${plan.id}.name`)}
-                description={t(`pricing.${plan.id}.description`)}
-                price={billingCycle === 'monthly' ? plan.monthlyPrice : plan.annualPrice}
-                billingCycle={billingCycle}
-                students={plan.students}
-                features={[
-                  t(`pricing.${plan.id}.feature1`),
-                  t(`pricing.${plan.id}.feature2`),
-                  t(`pricing.${plan.id}.feature3`),
-                  t(`pricing.${plan.id}.feature4`),
-                ]}
-                featured={plan.featured}
+                tier={{
+                  name: t(`pricing.${plan.id}.name`),
+                  description: t(`pricing.${plan.id}.description`),
+                  monthlyPrice: plan.monthlyPrice,
+                  annualPrice: plan.annualPrice,
+                  ctaLabel: 'Request Demo',
+                  features: [
+                    `Up to ${plan.students.toLocaleString()} students`,
+                    t(`pricing.${plan.id}.feature1`),
+                    t(`pricing.${plan.id}.feature2`),
+                    t(`pricing.${plan.id}.feature3`),
+                    t(`pricing.${plan.id}.feature4`),
+                  ],
+                  highlighted: plan.featured,
+                }}
+                isAnnual={billingCycle === 'annual'}
               />
             ))}
           </div>

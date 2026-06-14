@@ -1,10 +1,8 @@
 'use client';
 
-import { useLanguage } from '@/hooks/useLanguage';
+import Link from 'next/link';
 
 export default function SchoolAdminDashboard() {
-  const { t } = useLanguage();
-
   return (
     <div className="space-y-8">
       {/* Header */}
@@ -13,7 +11,7 @@ export default function SchoolAdminDashboard() {
           School Administration Dashboard
         </h1>
         <p className="text-slate-600 dark:text-slate-400 mt-2">
-          Manage your school's overall operations and performance
+          Manage your school&apos;s overall operations and performance
         </p>
       </div>
 
@@ -47,17 +45,40 @@ export default function SchoolAdminDashboard() {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {[
-              { title: 'Students', desc: '1,234 enrolled', action: 'Manage' },
-              { title: 'Teachers', desc: '64 staff', action: 'Manage' },
-              { title: 'Classes', desc: '48 active', action: 'Manage' },
-              { title: 'Reports', desc: 'Attendance & Performance', action: 'View' },
+              {
+                title: 'Students',
+                desc: '1,234 enrolled',
+                action: 'Manage',
+                href: '/school-admin/students',
+              },
+              {
+                title: 'Teachers',
+                desc: '64 staff',
+                action: 'Manage',
+                href: '/school-admin/teachers',
+              },
+              {
+                title: 'Classes',
+                desc: '48 active',
+                action: 'Manage',
+                href: '/school-admin/classes',
+              },
+              {
+                title: 'Reports',
+                desc: 'Attendance & Performance',
+                action: 'View',
+                href: '/school-admin/reports/attendance',
+              },
             ].map((item, i) => (
               <div key={i} className="p-4 border border-slate-200 dark:border-slate-700 rounded-lg">
                 <h3 className="font-semibold text-slate-900 dark:text-white">{item.title}</h3>
                 <p className="text-sm text-slate-600 dark:text-slate-400 mt-1">{item.desc}</p>
-                <button className="mt-3 text-sm text-brand-600 dark:text-brand-400 hover:font-semibold">
+                <Link
+                  href={item.href}
+                  className="mt-3 inline-block text-sm text-brand-600 hover:font-semibold dark:text-brand-400"
+                >
                   {item.action} →
-                </button>
+                </Link>
               </div>
             ))}
           </div>

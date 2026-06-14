@@ -1,10 +1,6 @@
 'use client';
 
-import { useLanguage } from '@/hooks/useLanguage';
-
 export default function StudentDashboard() {
-  const { t } = useLanguage();
-
   return (
     <div className="space-y-8">
       {/* Header */}
@@ -13,7 +9,7 @@ export default function StudentDashboard() {
           Welcome back, Student!
         </h1>
         <p className="text-slate-600 dark:text-slate-400 mt-2">
-          Here's an overview of your academic progress
+          Here&apos;s an overview of your academic progress
         </p>
       </div>
 
@@ -43,7 +39,7 @@ export default function StudentDashboard() {
         {/* Upcoming Classes */}
         <div className="lg:col-span-2 bg-white dark:bg-slate-800 rounded-lg p-6 border border-slate-200 dark:border-slate-700">
           <h2 className="text-lg font-bold text-slate-900 dark:text-white mb-4">
-            This Week's Schedule
+            This Week&apos;s Schedule
           </h2>
           <div className="space-y-3">
             {['Mathematics', 'English', 'Science', 'History'].map((subject, i) => (

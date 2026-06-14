@@ -2,14 +2,22 @@
 
 import { useLanguage } from '@/hooks/useLanguage';
 import { FeatureCard } from '@/components/marketing/FeatureCard';
+import {
+  BarChart3,
+  BookOpen,
+  ClipboardCheck,
+  GraduationCap,
+  ShieldCheck,
+  Users,
+} from 'lucide-react';
 
 const FEATURES = [
-  'authentication',
-  'studentManagement',
-  'teacherManagement',
-  'attendance',
-  'dashboard',
-  'eClass',
+  { key: 'authentication', icon: ShieldCheck },
+  { key: 'studentManagement', icon: GraduationCap },
+  { key: 'teacherManagement', icon: Users },
+  { key: 'attendance', icon: ClipboardCheck },
+  { key: 'dashboard', icon: BarChart3 },
+  { key: 'eClass', icon: BookOpen },
 ];
 
 export default function FeaturesContent() {
@@ -33,9 +41,10 @@ export default function FeaturesContent() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {FEATURES.map((feature) => (
               <FeatureCard
-                key={feature}
-                title={t(`features.${feature}.title`)}
-                description={t(`features.${feature}.description`)}
+                key={feature.key}
+                icon={feature.icon}
+                title={t(`features.${feature.key}.title`)}
+                description={t(`features.${feature.key}.description`)}
               />
             ))}
           </div>

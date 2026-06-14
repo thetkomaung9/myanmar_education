@@ -20,7 +20,7 @@ export default function ForgotPasswordContent() {
       // TODO: Call API endpoint to send reset email
       await new Promise((resolve) => setTimeout(resolve, 1000));
       setIsSubmitted(true);
-    } catch (err) {
+    } catch {
       setError(t('auth.errorSendingEmail'));
     } finally {
       setIsLoading(false);
