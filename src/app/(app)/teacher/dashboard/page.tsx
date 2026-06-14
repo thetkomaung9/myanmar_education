@@ -1,5 +1,7 @@
 'use client';
 
+import Link from 'next/link';
+
 export default function TeacherDashboard() {
   return (
     <div className="space-y-8">
@@ -54,9 +56,12 @@ export default function TeacherDashboard() {
                   <p className="font-medium text-slate-900 dark:text-white">{classRoom}</p>
                   <p className="text-xs text-slate-500 dark:text-slate-400 mt-1">45 students</p>
                 </div>
-                <button className="px-4 py-2 text-sm bg-brand-100 dark:bg-brand-900 text-brand-700 dark:text-brand-100 rounded-lg hover:bg-brand-200 dark:hover:bg-brand-800 transition-colors">
-                  Manage
-                </button>
+                <Link
+                  href="/teacher/attendance"
+                  className="px-4 py-2 text-sm bg-brand-100 dark:bg-brand-900 text-brand-700 dark:text-brand-100 rounded-lg hover:bg-brand-200 dark:hover:bg-brand-800 transition-colors"
+                >
+                  Attendance
+                </Link>
               </div>
             ))}
           </div>
@@ -67,13 +72,14 @@ export default function TeacherDashboard() {
           <h2 className="text-lg font-bold text-slate-900 dark:text-white mb-4">Tasks</h2>
           <div className="space-y-2">
             {[
-              { task: 'Grade assignments', due: 'Today' },
-              { task: 'Add attendance', due: 'Today' },
-              { task: 'Review lesson plan', due: 'Tomorrow' },
-              { task: 'Create exam', due: 'This week' },
+              { task: 'Grade assignments', due: 'Today', href: '/teacher/assignments' },
+              { task: 'Add attendance', due: 'Today', href: '/teacher/attendance' },
+              { task: 'Review lesson plan', due: 'Tomorrow', href: '/teacher/materials' },
+              { task: 'Create exam', due: 'This week', href: '/teacher/assignments' },
             ].map((item, i) => (
-              <div
+              <Link
                 key={i}
+                href={item.href}
                 className="flex items-start gap-3 p-3 bg-slate-50 dark:bg-slate-700 rounded-lg"
               >
                 <input type="checkbox" className="mt-1" />
@@ -81,7 +87,7 @@ export default function TeacherDashboard() {
                   <p className="text-sm font-medium text-slate-900 dark:text-white">{item.task}</p>
                   <p className="text-xs text-slate-500 dark:text-slate-400">{item.due}</p>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         </div>
