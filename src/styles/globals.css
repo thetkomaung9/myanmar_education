@@ -1,0 +1,160 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── Design System CSS Custom Properties ───────────────────────────── */
+@layer base {
+  :root {
+    /* Shadcn UI CSS variable overrides (light mode) */
+    --background: 0 0% 100%;
+    --foreground: 230 65% 22%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 230 65% 22%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 230 65% 22%;
+
+    --primary: 234 75% 50%;
+    --primary-foreground: 240 100% 97%;
+
+    --secondary: 240 92% 93%;
+    --secondary-foreground: 234 75% 50%;
+
+    --muted: 240 92% 93%;
+    --muted-foreground: 234 75% 50%;
+
+    --accent: 270 70% 60%;
+    --accent-foreground: 240 100% 97%;
+
+    --destructive: 0 84% 55%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 238 90% 85%;
+    --input: 238 90% 85%;
+    --ring: 234 75% 50%;
+
+    --radius: 0.5rem;
+
+    /* ── Typography Scale ─────────────────────────────────────────── */
+    --font-h1-size: 2.25rem;      /* 36px */
+    --font-h1-line-height: 2.5rem; /* 40px */
+
+    --font-h2-size: 1.875rem;      /* 30px */
+    --font-h2-line-height: 2.25rem; /* 36px */
+
+    --font-h3-size: 1.5rem;        /* 24px */
+    --font-h3-line-height: 1.875rem; /* 30px */
+
+    --font-h4-size: 1.25rem;       /* 20px */
+    --font-h4-line-height: 1.5rem;  /* 24px */
+
+    --font-h5-size: 1.125rem;      /* 18px */
+    --font-h5-line-height: 1.25rem; /* 20px */
+
+    --font-body-size: 1rem;        /* 16px */
+    --font-body-line-height: 1.5rem; /* 24px */
+
+    --font-caption-size: 0.75rem;  /* 12px */
+    --font-caption-line-height: 1rem;
+
+    --font-label-size: 0.875rem;   /* 14px */
+    --font-label-line-height: 1.25rem;
+  }
+
+  .dark {
+    /* Shadcn UI CSS variable overrides (dark mode) */
+    --background: 222 47% 6%;     /* #0F172A */
+    --foreground: 240 100% 97%;
+
+    --card: 222 47% 9%;
+    --card-foreground: 240 100% 97%;
+
+    --popover: 222 47% 9%;
+    --popover-foreground: 240 100% 97%;
+
+    --primary: 236 82% 65%;
+    --primary-foreground: 230 65% 22%;
+
+    --secondary: 232 70% 35%;
+    --secondary-foreground: 240 100% 97%;
+
+    --muted: 232 70% 35%;
+    --muted-foreground: 240 92% 93%;
+
+    --accent: 270 70% 60%;
+    --accent-foreground: 240 100% 97%;
+
+    --destructive: 0 84% 55%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 232 70% 35%;
+    --input: 232 70% 35%;
+    --ring: 236 82% 65%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+    font-size: var(--font-body-size);
+    line-height: var(--font-body-line-height);
+  }
+
+  h1 {
+    font-size: var(--font-h1-size);
+    line-height: var(--font-h1-line-height);
+    @apply font-bold tracking-tight;
+  }
+
+  h2 {
+    font-size: var(--font-h2-size);
+    line-height: var(--font-h2-line-height);
+    @apply font-bold tracking-tight;
+  }
+
+  h3 {
+    font-size: var(--font-h3-size);
+    line-height: var(--font-h3-line-height);
+    @apply font-semibold;
+  }
+
+  h4 {
+    font-size: var(--font-h4-size);
+    line-height: var(--font-h4-line-height);
+    @apply font-semibold;
+  }
+
+  h5 {
+    font-size: var(--font-h5-size);
+    line-height: var(--font-h5-line-height);
+    @apply font-medium;
+  }
+
+  /* Focus ring — accessible, high-contrast, 2px minimum */
+  :focus-visible {
+    @apply outline-none ring-2 ring-primary ring-offset-2 ring-offset-background;
+  }
+}
+
+/* ── Utility classes for typography scale ────────────────────────────── */
+@layer utilities {
+  .text-caption {
+    font-size: var(--font-caption-size);
+    line-height: var(--font-caption-line-height);
+  }
+
+  .text-label {
+    font-size: var(--font-label-size);
+    line-height: var(--font-label-line-height);
+  }
+
+  /* Myanmar font utility */
+  .font-myanmar {
+    font-family: 'Noto Sans Myanmar', 'Pyidaungsu', sans-serif;
+  }
+}

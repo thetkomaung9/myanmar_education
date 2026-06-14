@@ -1,0 +1,349 @@
+{
+  "nav": {
+    "features": "Features",
+    "pricing": "Pricing",
+    "about": "About",
+    "contact": "Contact",
+    "requestDemo": "Request Demo",
+    "howItWorks": "How It Works"
+  },
+  "hero": {
+    "headline": "Transforming Myanmar's Education Sector Through Technology",
+    "subHeadline": "EduSphere Myanmar streamlines student records, teacher workflows, attendance, and e-learning in one unified platform built for every school in Myanmar.",
+    "primaryCta": "Request a Demo",
+    "secondaryCta": "Learn More"
+  },
+  "features": {
+    "title": "Everything Your School Needs",
+    "subtitle": "A complete platform designed for modern Myanmar schools",
+    "authentication": {
+      "title": "Secure Authentication",
+      "description": "Role-based access control for Super Admins, School Admins, Teachers, and Students."
+    },
+    "studentManagement": {
+      "title": "Student Management",
+      "description": "Manage student profiles, enrollment records, and academic history with ease."
+    },
+    "teacherManagement": {
+      "title": "Teacher Management",
+      "description": "Assign subjects, track workloads, and maintain teacher profiles efficiently."
+    },
+    "attendance": {
+      "title": "Attendance Tracking",
+      "description": "Record and report daily attendance with real-time dashboards and analytics."
+    },
+    "dashboard": {
+      "title": "Analytics Dashboard",
+      "description": "Actionable insights for school performance and progress at a glance."
+    },
+    "eClass": {
+      "title": "E-Class System",
+      "description": "Upload materials, set assignments, and publish announcements online."
+    }
+  },
+  "howItWorks": {
+    "title": "How It Works",
+    "step1": {
+      "title": "Register Your School",
+      "description": "Create your school profile and set up the administrator account in minutes."
+    },
+    "step2": {
+      "title": "Onboard Teachers & Students",
+      "description": "Import or add your staff and student roster quickly using our guided wizard."
+    },
+    "step3": {
+      "title": "Go Live",
+      "description": "Start recording attendance, publishing materials, and tracking performance instantly."
+    }
+  },
+  "pricing": {
+    "title": "Simple, Transparent Pricing",
+    "subtitle": "Choose the perfect plan for your school",
+    "monthly": "Monthly",
+    "annual": "Annual",
+    "save10": "Save 10%",
+    "faqTitle": "Frequently Asked Questions",
+    "faq1": {
+      "question": "Can I change my plan later?",
+      "answer": "Yes, you can upgrade or downgrade your plan at any time. Changes take effect on your next billing cycle."
+    },
+    "faq2": {
+      "question": "Is there a free trial?",
+      "answer": "Yes! We offer a 30-day free trial for all new schools. No credit card required to get started."
+    },
+    "faq3": {
+      "question": "What payment methods do you accept?",
+      "answer": "We accept bank transfers, credit cards, and mobile payment solutions popular in Myanmar."
+    },
+    "starter": {
+      "name": "Starter",
+      "description": "Perfect for small schools just getting started",
+      "feature1": "Up to 100 students",
+      "feature2": "Student & teacher management",
+      "feature3": "Basic attendance tracking",
+      "feature4": "Email support"
+    },
+    "professional": {
+      "name": "Professional",
+      "description": "Ideal for growing schools",
+      "feature1": "Up to 500 students",
+      "feature2": "Advanced reporting & analytics",
+      "feature3": "E-Class system",
+      "feature4": "Priority phone support"
+    },
+    "enterprise": {
+      "name": "Enterprise",
+      "description": "For large schools and networks",
+      "feature1": "Unlimited students",
+      "feature2": "Custom integrations",
+      "feature3": "Dedicated account manager",
+      "feature4": "24/7 phone & onsite support"
+    }
+  },
+  "about": {
+    "title": "About EduSphere Myanmar",
+    "subtitle": "Transforming education through technology",
+    "visionTitle": "Our Vision",
+    "vision": "To become Myanmar's leading education technology platform, enabling every school to deliver quality education through modern digital tools.",
+    "missionTitle": "Our Mission",
+    "mission": "To empower Myanmar schools with accessible, affordable, and user-friendly school management software that bridges the gap between administrators, teachers, and students.",
+    "teamTitle": "Our Team",
+    "teamDescription": "A passionate team of educators and technologists committed to transforming Myanmar's education sector.",
+    "team1": {
+      "name": "Ko Aung Kyaw",
+      "role": "Founder & CEO",
+      "bio": "15 years of experience in education technology and school administration."
+    },
+    "team2": {
+      "name": "Daw Ma Ma",
+      "role": "Director of Product",
+      "bio": "Former school administrator with deep knowledge of Myanmar's education needs."
+    },
+    "team3": {
+      "name": "Ko Myo Thant",
+      "role": "Head of Engineering",
+      "bio": "Full-stack developer passionate about building scalable education solutions."
+    },
+    "team4": {
+      "name": "Daw Zaw Zaw",
+      "role": "Head of Customer Success",
+      "bio": "Dedicated to ensuring every school gets the support they need to succeed."
+    },
+    "schoolsServing": "Schools Using EduSphere",
+    "studentsImpacted": "Students Impacted",
+    "teachersUsing": "Teachers Using Platform",
+    "uptime": "Uptime %"
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "subtitle": "Have questions? Our team is here to help. Reach out to us today.",
+    "infoTitle": "How to Reach Us",
+    "emailLabel": "Email",
+    "phoneLabel": "Phone",
+    "locationLabel": "Location",
+    "faqTitle": "Common Questions",
+    "faq1": {
+      "question": "How long is the onboarding process?",
+      "answer": "Typically 1-2 weeks. Our team will guide you through every step, including data migration and staff training."
+    },
+    "faq2": {
+      "question": "Do you offer training?",
+      "answer": "Yes! We provide comprehensive training for administrators, teachers, and staff at no extra cost."
+    },
+    "faq3": {
+      "question": "Can you help migrate our existing data?",
+      "answer": "Absolutely. Our migration specialists will handle the entire process to ensure zero data loss."
+    },
+    "ctaTitle": "Ready to Transform Your School?",
+    "ctaSubtitle": "Contact us today for a personalized demo and consultation.",
+    "sendEmail": "Send Email",
+    "callUs": "Call Us"
+  },
+  "auth": {
+    "loginTitle": "Sign In to EduSphere",
+    "loginSubtitle": "Welcome back. Enter your credentials to access your school portal.",
+    "loginDescription": "Don't have an account? Contact your school administrator.",
+    "emailLabel": "Email Address",
+    "emailPlaceholder": "you@school.edu.mm",
+    "passwordLabel": "Password",
+    "passwordPlaceholder": "Enter your password",
+    "rememberMe": "Remember me",
+    "forgotPassword": "Forgot your password?",
+    "signIn": "Sign In",
+    "signingIn": "Signing in...",
+    "loginFailed": "Invalid email or password",
+    "benefit1Title": "Secure & Reliable",
+    "benefit1Desc": "Enterprise-grade security protects your school data",
+    "benefit2Title": "Fast & Responsive",
+    "benefit2Desc": "Lightning-quick performance even on slow connections",
+    "benefit3Title": "Bilingual Support",
+    "benefit3Desc": "Full support for English and Myanmar languages",
+    "forgotPasswordTitle": "Reset Password",
+    "forgotPasswordDescription": "Enter your email address and we'll send you a link to reset your password.",
+    "sendResetLink": "Send Reset Link",
+    "sendingResetLink": "Sending...",
+    "resetEmailFailed": "Failed to send reset email. Please try again.",
+    "resetEmailSent": "Check Your Email",
+    "resetEmailSentDescription": "We've sent a password reset link to your email. The link expires in 24 hours.",
+    "resetPasswordTitle": "Create New Password",
+    "resetPasswordDescription": "Enter a strong password to secure your account.",
+    "newPasswordLabel": "New Password",
+    "confirmPasswordLabel": "Confirm Password",
+    "passwordMismatch": "Passwords do not match",
+    "passwordTooShort": "Password must be at least 8 characters",
+    "passwordRequirement": "Minimum 8 characters, including uppercase, lowercase, and numbers",
+    "resetPassword": "Reset Password",
+    "resettingPassword": "Resetting...",
+    "resetFailed": "Password reset failed. Please try again.",
+    "passwordResetSuccess": "Password Reset",
+    "redirectingToLogin": "Redirecting to login. You can now sign in with your new password.",
+    "noAccount": "Don't have an account?",
+    "contactSupport": "Contact your school administrator",
+    "backToLogin": "Back to Sign In"
+  },
+  "portals": {
+    "superAdmin": "Super Admin",
+    "schoolAdmin": "School Admin",
+    "teacher": "Teacher",
+    "student": "Student",
+    "common": {
+      "dashboard": "Dashboard",
+      "announcements": "Announcements",
+      "attendance": "Attendance",
+      "materials": "Learning Materials",
+      "assignments": "Assignments",
+      "logout": "Log Out",
+      "profile": "Profile",
+      "settings": "Settings",
+      "notifications": "Notifications",
+      "search": "Search",
+      "export": "Export",
+      "import": "Import",
+      "add": "Add",
+      "edit": "Edit",
+      "delete": "Delete",
+      "save": "Save",
+      "cancel": "Cancel",
+      "confirm": "Confirm",
+      "back": "Back",
+      "next": "Next",
+      "finish": "Finish",
+      "loading": "Loading…",
+      "noData": "No data to display",
+      "viewAll": "View All",
+      "totalStudents": "Total Students",
+      "totalTeachers": "Total Teachers",
+      "totalClasses": "Total Classes",
+      "totalSchools": "Total Schools",
+      "activeUsers": "Active Users",
+      "systemUptime": "System Uptime",
+      "todayAttendance": "Today's Attendance"
+    },
+    "superAdminPortal": {
+      "title": "Super Admin Portal",
+      "schools": "Schools",
+      "users": "Users",
+      "schoolName": "School Name",
+      "adminEmail": "Admin Email",
+      "studentCount": "Student Count",
+      "status": "Status",
+      "actions": "Actions",
+      "createSchool": "Create School",
+      "editSchool": "Edit School",
+      "deleteSchool": "Delete School",
+      "searchSchools": "Search schools…",
+      "allRoles": "All Roles",
+      "filterByRole": "Filter by Role",
+      "totalSchoolsMetric": "Total Schools Registered",
+      "totalUsersMetric": "Total Active Users",
+      "totalStudentsMetric": "Total Students",
+      "systemUptimeMetric": "System Uptime"
+    },
+    "schoolAdminPortal": {
+      "title": "School Admin Portal",
+      "students": "Students",
+      "teachers": "Teachers",
+      "classes": "Classes",
+      "reports": "Reports",
+      "studentCode": "Student Code",
+      "className": "Class Name",
+      "assignedTeacher": "Assigned Teacher",
+      "enrolledStudents": "Enrolled Students",
+      "createClass": "Create Class",
+      "editClass": "Edit Class",
+      "deleteClass": "Delete Class",
+      "deleteClassBlocked": "This class cannot be deleted because it has enrolled students.",
+      "archiveStudent": "Archive Student",
+      "archiveConfirm": "Are you sure you want to archive the selected student(s)? This action can be reversed.",
+      "searchStudents": "Search by name or student code…",
+      "filterByClass": "Filter by Class",
+      "exportCsv": "Export to CSV",
+      "attendanceTrend": "Attendance Trend",
+      "last7Days": "Last 7 Days",
+      "last30Days": "Last 30 Days",
+      "enrolledStudentsMetric": "Students Enrolled",
+      "activeTeachersMetric": "Active Teachers",
+      "activeClassesMetric": "Active Classes",
+      "todayAttendanceMetric": "Today's Attendance"
+    },
+    "teacherPortal": {
+      "title": "Teacher Portal",
+      "myClasses": "My Classes",
+      "takeAttendance": "Take Attendance",
+      "uploadMaterial": "Upload Material",
+      "createAssignment": "Create Assignment",
+      "pendingAttendance": "Pending Attendance",
+      "upcomingDeadlines": "Upcoming Deadlines",
+      "assignmentTitle": "Assignment Title",
+      "assignmentDescription": "Description",
+      "dueDate": "Due Date",
+      "maxFileSize": "Max file size: 50 MB",
+      "submissionStatus": "Submission Status",
+      "pending": "Pending",
+      "submitted": "Submitted",
+      "graded": "Graded",
+      "materialTitle": "Material Title",
+      "materialFile": "Upload File",
+      "fileTooLarge": "File exceeds the 50 MB limit. Please choose a smaller file."
+    },
+    "studentPortal": {
+      "title": "Student Portal",
+      "myAttendance": "My Attendance",
+      "myMaterials": "My Materials",
+      "myAssignments": "My Assignments",
+      "profile": "My Profile",
+      "enrolledCourses": "Enrolled Courses",
+      "recentAnnouncements": "Recent Announcements",
+      "upcomingAssignments": "Upcoming Assignments",
+      "present": "Present",
+      "absent": "Absent",
+      "late": "Late",
+      "activeAssignments": "Active Assignments",
+      "pastAssignments": "Past Assignments",
+      "submitAssignment": "Submit Assignment",
+      "unread": "Unread",
+      "markAsRead": "Mark as Read",
+      "attendanceSummary": "Attendance Summary",
+      "presentCount": "Present",
+      "absentCount": "Absent",
+      "lateCount": "Late"
+    }
+  },
+  "errors": {
+    "generic": "Something went wrong. Please try again.",
+    "notFound": "Page not found.",
+    "unauthorized": "You are not authorized to view this page.",
+    "forbidden": "You do not have permission to perform this action.",
+    "timeout": "The request timed out. Please retry.",
+    "networkError": "Network error. Please check your connection.",
+    "serverError": "A server error occurred. Please try again later.",
+    "validationError": "Please correct the errors below and try again.",
+    "retry": "Retry",
+    "goHome": "Go to Homepage",
+    "sessionExpired": "Your session has expired. Please sign in again.",
+    "fileTooLarge": "The selected file is too large.",
+    "invalidFileType": "This file type is not supported.",
+    "requiredField": "This field is required.",
+    "invalidEmail": "Please enter a valid email address."
+  }
+}
