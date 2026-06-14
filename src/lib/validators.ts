@@ -46,3 +46,30 @@ export const loginSchema = z.object({
 });
 
 export type LoginFormData = z.infer<typeof loginSchema>;
+
+/**
+ * Zod schema for student profile create/edit forms.
+ * Validates the school-admin student management workflow.
+ */
+export const studentSchema = z.object({
+  studentCode: z.string().trim().min(2, 'Student code is required'),
+  firstName: z.string().trim().min(1, 'First name is required'),
+  lastName: z.string().trim().min(1, 'Last name is required'),
+  email: z.string().trim().email('Please enter a valid email address'),
+  phone: z.string().trim().optional(),
+  dateOfBirth: z.string().min(1, 'Date of birth is required'),
+  gender: z.enum(['female', 'male', 'other'], {
+    error: 'Please select a gender',
+  }),
+  className: z.string().min(1, 'Class is required'),
+  section: z.string().min(1, 'Section is required'),
+  enrollmentDate: z.string().min(1, 'Enrollment date is required'),
+  status: z.enum(['active', 'inactive', 'graduated', 'archived'], {
+    error: 'Please select a status',
+  }),
+  guardianName: z.string().trim().min(1, 'Guardian name is required'),
+  guardianPhone: z.string().trim().min(1, 'Guardian phone is required'),
+  address: z.string().trim().min(5, 'Address must be at least 5 characters'),
+});
+
+export type StudentFormData = z.infer<typeof studentSchema>;
